@@ -2,8 +2,20 @@
 <head>
   <meta charset="UTF-8">
   <title>React Basic Example</title>
+  <script type="text/javascript" src="bower_components/react/react.js"></script>
+  <script type="text/javascript" src="bower_components/react/JSXTransformer.js"></script>
 </head>
 <body>
+  <div class="container"></div>
   
+  <script type="text/jsx">
+    /** @jsx React.DOM */
+    var Hello = React.createClass({
+      render: function () {
+        return <div> Hi there! The date now is: {this.props.now} </div>;
+      }
+    });
+    React.render(<Hello now={new Date().toString()} />, document.getElementsByClassName('container')[0]);
+  </script>
 </body>
 </html>
