@@ -1,0 +1,23 @@
+{
+  "name": "react-hello-world",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dkarter/react-hello-world",
+  "authors": [
+    "Dorian Karter <dkarter@gmail.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.1"
+  }
+}
